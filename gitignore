@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+*.env
+.env
+balances.json
+*.log
+.venv/
+venv/
