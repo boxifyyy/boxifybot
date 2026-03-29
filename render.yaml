@@ -1,0 +1,19 @@
+services:
+  - type: worker
+    name: toxic-casino-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: TELEGRAM_TOKEN
+        sync: false
+      - key: OXAPAY_MERCHANT_API_KEY
+        sync: false
+      - key: OXAPAY_PAYOUT_API_KEY
+        sync: false
+      - key: OXAPAY_GENERAL_API_KEY
+        sync: false
+      - key: PRIVATE_LOG_GROUP_ID
+        sync: false
+      - key: SLOTS_WEBAPP_URL
+        sync: false
